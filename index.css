@@ -1,0 +1,696 @@
+body {
+    background-color: white;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2px;
+}
+
+/* Header Line */
+
+#header {
+    background-color: black;
+    height: 30px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+#header a {
+    display: block;
+    text-decoration: none;
+}
+#header #navBtn {
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-size: 25px;
+    left: 0;
+    padding-left: 10px;
+    position: absolute;
+    top: 0;
+    width: 10%;
+}
+#header a#homeBtn {
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-size: 25px;
+    left: 10%;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 10%;
+}
+#header a#logo {
+    color: #f3c623;
+    cursor: pointer;
+    font-size: 25px;
+    left: 20%;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 60%;
+}
+#header a#logo span {
+    font-size: 20px;
+}
+#header #loginBtn {
+    background-color: #f3c623;
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 3.5px;
+    font-weight: bold;
+    position: absolute;
+    right: 0px;
+    text-align: center;
+    top: 0;
+    width: 10%;
+}
+#loginPopup {
+    background-color: white;
+    display: none;
+    width: 700px;
+    z-index: 100;
+}
+#closeMenu2 i {
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+    padding-top: 5px;
+    text-align: right;
+    width: 700px;
+}
+#closeMenu2 i:hover {
+    color: crimson;
+}
+#loginContent {
+    background-color: white;
+    border: 1.5px solid black;
+    display: block;
+    padding: 20px;
+    padding-left: 1.5%;
+    padding-top: 1.5%;
+    position: absolute;
+    text-align: center;
+    visibility: inherit;
+    width: 700px;
+    z-index: 120;
+}
+
+/* Navigation Bar */
+
+#navBar {
+    background: transparent;
+    display: none;
+    height: 100%;
+    margin-right: auto;
+    position: fixed;
+    width: 240px;
+}
+nav {
+    align-items: center;
+    background-color: #141414;
+    border: none;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: left;
+}
+#closeMenu1 i {
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 20px;
+    padding-left: 200px;
+}
+#closeMenu1 i:hover {
+    color: crimson;
+}
+#mainMenu {
+    list-style: none;
+    padding: 10px;
+}
+#mainMenu li a {
+    color: whitesmoke;
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    -webkit-transition: 1s;
+}
+#mainMenu li:hover a {
+    color: #f3c623;
+    font-weight: bold;
+}
+#staticLogo {
+    align-items: center;
+    color: #f3c623;
+    font-size: 25px;
+    display: inline-block;
+}
+#staticLogo span {
+    font-size: 20px;
+}
+
+/* Home Page */
+
+#home {
+    background-color: #111111;
+    color: white;
+    height: 100%;
+    margin-left: auto;
+    width: 100%;
+}
+#mainCol {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.col1 {
+    border: 0.5px solid white;
+    display: flex;
+    flex-wrap: wrap;
+}
+.col2 {
+    border: 0.5px solid white;
+    flex-direction: row-reverse;
+}
+.col1 #imgCol {
+    flex-basis: 50%;
+}
+.col1 #textCol {
+    flex-basis: 50%;
+}
+#imgCol img {
+    display: block;
+    width: 100%;
+}
+#textCol h5 {
+    color: rgb(109, 109, 109);
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-left: 50px;
+    margin-top: 250px;
+    text-align: justify;
+}
+#textCol h3 {
+    color: white;
+    font-family: 'poppins', arial, sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    margin-left: 50px;
+    text-align: justify;
+}
+#textCol p {
+    color: rgb(109, 109, 109);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    text-align: justify;
+    width: 85%;
+}
+.portfolioBtn {
+    border: 1px solid #f3c623;
+    color: #f3c623;
+    font-size: 20px;
+    letter-spacing: 3px;
+    list-style: none;
+    margin-left: 50px;
+    padding: 5px;
+    text-decoration: none;
+    transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    -webkit-transition: 1s;
+}
+.portfolioBtn:hover {
+    background-color: #f3c623;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+#loading {
+    background: #f3c623;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+}
+#load {
+    align-items: center;
+    color: #000000;
+    cursor: pointer;
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+    justify-content: center;
+    text-decoration: none;
+}
+
+/* Gallery Page */
+
+#gallery {
+    background-color: #111111;
+    color: white;
+    height: 100%;
+    margin-left: auto;
+    width: 100%;
+}
+#galleryMain {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+#div1 {
+    border: 0.5px solid white;
+    position: relative;
+    width: 100%;
+}
+#div1 img {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+#div1 #imgInfo {
+    left: 0%;
+    opacity: 0;
+    position: absolute;
+    top: 30%;
+    transition: 1s;
+    width: 80%;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    -webkit-transition: 1s;
+}
+#div1:hover img {
+    opacity: 0.6;
+}
+#div1:hover #imgInfo {
+    opacity: 1;
+}
+#div1 #imgInfo h5 {
+    color: #ffd438e7;
+    font-size: 15px;
+    margin-left: 40px;
+    text-align: justify;
+}
+#div1 #imgInfo h3 {
+    color: rgb(247, 242, 242);
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    text-align: justify;
+}
+.galleryPortfolioBtn {
+    border: 1px solid #f3c623;
+    color: #f3c623;
+    font-size: 20px;
+    letter-spacing: 3px;
+    list-style: none;
+    margin-left: 40px;
+    padding: 5px;
+    text-decoration: none;
+    transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    -webkit-transition: 1s;
+}
+.galleryPortfolioBtn:hover {
+    background-color: #f3c623;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Price Page */
+
+#price {
+    background-color: #111111;
+    color: white;
+    height: 100%;
+    margin-left: auto;
+    width: 100%;
+}
+#priceMain {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+#pricePackage {
+    border: 0.5px solid white;
+    position: relative;
+    width: 100%;
+}
+#pricePackage img {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+#pricePackage #priceInfo {
+    left: 0%;
+    opacity: 0;
+    position: absolute;
+    top: 3%;
+    transition: 1s;
+    width: 100%;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    -webkit-transition: 1s;
+}
+#pricePackage:hover img {
+    opacity: 0.6;
+}
+#pricePackage:hover #priceInfo {
+    opacity: 1;
+}
+#pricePackage #priceInfo h3 {
+    color: whitesmoke;
+    font-size: 26px;
+    margin-left: 60px;
+    margin-top: 50px;
+    text-align: left;
+}
+#pricePackage #priceInfo h6 {
+    color: yellow;
+    font-size: 12px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    margin-top: 20px;
+    text-align: left;
+}
+#pricePackage #priceInfo h5 {
+    font-weight: normal;
+    margin-left: 60px;
+    margin-top: 0px;
+    text-align: left;
+}
+#pricePackage #priceInfo h4 {
+    font-size: 30px;
+    margin-left: 60px;
+    margin-top: 10px;
+    text-align: left;
+}
+#priceInfo .previewBtn {
+    margin-left: 60px;
+}
+
+/* About Page */
+
+#about {
+    background-color: #111111;
+    color: white;
+    height: 100%;
+    margin-left: auto;
+    width: 100%;
+}
+#aboutMain {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.aboutCol {
+    border: 0.5px solid white;
+    display: flex;
+    flex-wrap: wrap;
+}
+.aboutCol #aboutContent {
+    flex-basis: 50%;
+}
+#aboutContent img {
+    display: block;
+    width: 100%;
+}
+#aboutContent h2 {
+    color: #fff;
+    font-family: "Abril Fatface", cursive;
+    font-size: 40px;
+    line-height: 1.2;
+    margin: 40px;
+    margin-top: 60px;
+}
+#aboutContent h4 {
+    color: #ffe;
+    font-family: "Abril Fatface", cursive;
+    font-size: 30px;
+    line-height: 1.2;
+    margin: 40px;
+}
+#aboutContent span {
+    color: #f3c623;
+}
+#aboutContent p {
+    color: rgb(109, 109, 109);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+    margin: 40px;
+    text-align: justify;
+}
+#aboutContent #teamDetails {
+    display: flex;
+    width: 100%;
+}
+#aboutContent #teamDetails #team {
+    margin: 30px;
+    width: 33.3%;
+}
+#aboutContent #team img {
+    border-radius: 50%;
+    height: 100px;
+    padding-left: 30px;
+    width: 100px;
+}
+#aboutContent #teamDetails #team h3 {
+    color: wheat;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+#aboutContent #teamDetails #team h5 {
+    color: rgb(109, 109, 109);
+    font-size: 12px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+/* Contact Us Page */
+
+#contact {
+    background-color: #111111;
+    color: white;
+    height: 100%;
+    margin-left: auto;
+    width: 100%;
+}
+#contactMain {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.contactCol {
+    border: 0.5px solid white;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contactCol #address {
+    background-color: #f3c623;
+    color: black;
+    flex-basis: 50%;
+}
+.contactCol #contactForm {
+    background-color: black;
+    color: whitesmoke;
+    flex-basis: 50%;
+}
+#address h3 {
+    color: rgb(39, 38, 38);
+    font-size: 50px;
+    font-weight: bold;
+    margin: 50px;
+    margin-top: 40px;
+    text-align: justify;
+}
+#address h6 {
+    color: rgb(39, 38, 38);
+    font-size: 30px;
+    font-style: italic;
+    font-weight: normal;
+    margin: 50px;
+    text-align: justify;
+}
+#address h5 {
+    color: rgb(39, 38, 38);
+    font-size: medium;
+    font-weight: lighter;
+    margin-left: 50px;
+}
+#address i {
+    font-size: 20px;
+    margin-right: 10px;
+    text-align: center;
+}
+#address span {
+    font-weight: 600;
+}
+#address p {
+    margin-left: 50px;
+    text-align: justify;
+}
+#address span a {
+    color: darkblue;
+}
+form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#contactForm h2 {
+    color: #fff;
+    font-family: "Abril Fatface", cursive;
+    font-size: 40px;
+    line-height: 1.2;
+    margin: 40px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#contactForm input {
+    background-color: transparent;
+    border: transparent;
+    border-bottom: 1px solid #fff;
+    border-style: groove;
+    color: white;
+    height: 30px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+    width: 250px;
+}
+#contactForm textarea {
+    background-color: #141414;
+    border: 1px solid whitesmoke;
+    color: white;
+    height: 60px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    text-shadow: none;
+    width: 250px;
+}
+#contactForm button {
+    background-color: #f3c623;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-border-radius: 20px;
+}
+
+/* Terms & Conditions Page */
+
+#tc a {
+    text-decoration: none;
+}
+#tc h1 {
+    text-align: center;
+}
+#tc h3 {
+    text-align: center;
+}
+#tc p {
+    text-align: justify;
+}
+#tc h2 {
+    text-align: justify;
+}
+#tc h4 {
+    text-align: center;
+}
+#thanks {
+    font-size: 20px;
+}
+
+/* Forgot Password Page */
+
+#forgot {
+    align-items: center;
+    border: 1px solid black;
+    justify-content: center;
+}
+#forgot a {
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+}
+#forgotForm {
+    align-content: start;
+    align-items: start;
+    box-sizing: content-box; 
+    display: block;
+    justify-content: start;
+    padding: 10px;
+    visibility: visible;
+}
+#forgotForm  h2 {
+    text-align: center;
+}
+input {
+    cursor: pointer;
+    transition: .3s;
+}
+#input {
+    text-align: justify;
+}
+#uname {
+    margin-left: 1%;
+    text-transform: initial;
+    width: 350px;
+}
+#passwrd {
+    margin-left: 0.7%;
+    width: 350px;
+}
+#rptPasswrd {
+    margin-left: 0.7%;
+    width: 350px;
+}
+#forgotBtn {
+    margin-left: 120px;
+}
+
+/* Portfolio Page(s) */
+
+#portfolio {
+    background-color: #111111;
+    color: white;
+    height: 100%;
+    margin-left: auto;
+    width: 100%;
+}
+#portfolioMain {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+#portfolioDiv {
+    border: 0.5px solid white;
+    position: relative;
+    width: 100%;
+}
+#portfolioDiv img {
+    display: block;
+    height: 100%;
+    width: 100%;
+}

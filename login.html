@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page&nbsp;📃</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="form" id="x">
+            <br>
+            <h1>Login</h1>
+            <br><br>
+            <img src="https://static-00.iconduck.com/assets.00/user-login-icon-487x512-xx4t1c61.png"
+                alt="user login icon" title="user login icon" class="user">
+            <br><br><br>
+            <div id="input">
+                <label for="uname"><b>Email ID:</b>&nbsp;</label>
+                <input type="email" autocomplete="off" class="uname" id="uname" required>
+            </div>
+            <br>
+            <div id="input">
+                <label for="psw"><b>Password:</b>&nbsp;</label>
+                <input type="password" autocomplete="off" class="password" id="passwrd" name="psw" required>
+                <br>
+                <span id="left">
+                    <a href="forgot.html">Forgot password</a>
+                </span>
+            </div>
+            <br><br>
+            <button type="submit-btn" class="sbtn" onclick="login()">Login</button>
+            <button type="reset" class="rbtn" onclick="reset()">Reset</button>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div>
+            <span class="reg" id="reg">Don't have an account?
+                <a href="register.html" class="link">
+                    <b>Register</b>
+                </a>
+            </span>
+        </div>
+        <br>
+        <div id="popup">
+            <div id="content">
+                <iframe id="frame" src="register.html" style="width: 95%; height: 95%;" allowfullscreen=""
+                    frameborder="0"></iframe>
+            </div>
+        </div>
+    </form>
+    <script src="login.js"></script>
+</body>
+
+</html>

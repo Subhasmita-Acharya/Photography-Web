@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Architectural Photography</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="header">
+        <div id="navBtn" onclick="displayMenu()">
+            <i class="fa fa-bars"></i>
+        </div>
+        <a href="index.html" id="homeBtn">
+            <i class="fa fa-home"></i>
+        </a>
+        <a href="index.html" id="logo">
+            <span>&#128248;</span><b>M<small>ASTER</small>P<small>IECE</small></b>
+        </a>
+        <a onclick="logIn(); return false;" id="loginBtn"><b>Login</b></button></a>
+    </div>
+    <section id="navBar">
+        <nav>
+            <br>
+            <div id="closeMenu1" onclick="closeMenu1()">
+                <i class="fa fa-times"></i>
+            </div>
+            <br><br><br><br><br>
+            <ul id="mainMenu">
+                <li><a href="gallery.html" id="galleryBtn">Gallery</a></li>
+                <li><a href="price.html" id="priceBtn">Price</a></li>
+                <li><a href="about.html" id="aboutBtn">About</a></li>
+                <li><a href="contact.html" id="contactBtn">Contact Us</a></li>
+            </ul>
+            <br><br><br><br><br>
+            <div id="staticLogo">
+                <span>&#128248;</span><b>M<small>ASTER</small>P<small>IECE</small></b>
+            </div>
+        </nav>
+    </section>
+    <section id="portfolio">
+        <div id="portfolioMain">
+            <div id="portfolioDiv">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Cath%C3%A9drale_Saint-Gatien_de_Tours.JPG/800px-Cath%C3%A9drale_Saint-Gatien_de_Tours.JPG"
+                    alt="Architectural Photography 1">
+            </div>
+            <div id="portfolioDiv">
+                <img src="https://w0.peakpx.com/wallpaper/572/575/HD-wallpaper-architecture-night-city-city-lights-long-exposure.jpg"
+                    alt="Architectural Photography 2">
+            </div>
+            <div id="portfolioDiv">
+                <img src="https://images.squarespace-cdn.com/content/v1/51d867cee4b084dcc625febf/1460614036800-AL86XISKSV74GXT0QIH3/Bakare_20120729_.jpg"
+                    alt="Architectural Photography 3">
+            </div>
+            <div id="portfolioDiv">
+                <img src="https://c0.wallpaperflare.com/preview/11/991/775/taj-mahal-india.jpg"
+                    alt="Architectural Photography 4">
+            </div>
+            <div id="portfolioDiv">
+                <img src="https://live.staticflickr.com/6134/6009115781_e9431bf0d3_b.jpg"
+                    alt="Architectural Photography 5">
+            </div>
+            <div id="portfolioDiv">
+                <img src="https://media.cnn.com/api/v1/images/stellar/prod/131112104003-01-tallest-buildings-1112.jpg?q=w_937,h_1666,x_1012,y_0,c_crop"
+                    alt="Architectural Photography 6">
+            </div>
+            <div id="loginPopup">
+                <div id="loginContent">
+                    <div id="closeMenu2" onclick="closeMenu2()">
+                        <i class="fa fa-times"></i>
+                    </div>
+                    <br>
+                    <iframe id="frame" src="login.html" style="width: 95%; height: 95%;" allowfullscreen=""
+                        frameborder="0"></iframe>
+                </div>
+            </div>
+    </section>
+    <script src="portfolio.js"></script>
+</body>
+
+</html>

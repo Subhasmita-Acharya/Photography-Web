@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Fashion Photography</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="header">
+        <div id="navBtn" onclick="displayMenu()">
+            <i class="fa fa-bars"></i>
+        </div>
+        <a href="index.html" id="homeBtn">
+            <i class="fa fa-home"></i>
+        </a>
+        <a href="index.html" id="logo">
+            <span>&#128248;</span><b>M<small>ASTER</small>P<small>IECE</small></b>
+        </a>
+        <a onclick="logIn(); return false;" id="loginBtn"><b>Login</b></button></a>
+    </div>
+    <section id="navBar">
+        <nav>
+            <br>
+            <div id="closeMenu1" onclick="closeMenu1()">
+                <i class="fa fa-times"></i>
+            </div>
+            <br><br><br><br><br>
+            <ul id="mainMenu">
+                <li><a href="gallery.html" id="galleryBtn">Gallery</a></li>
+                <li><a href="price.html" id="priceBtn">Price</a></li>
+                <li><a href="about.html" id="aboutBtn">About</a></li>
+                <li><a href="contact.html" id="contactBtn">Contact Us</a></li>
+            </ul>
+            <br><br><br><br><br>
+            <div id="staticLogo">
+                <span>&#128248;</span><b>M<small>ASTER</small>P<small>IECE</small></b>
+            </div>
+        </nav>
+    </section>
+    <section id="portfolio">
+        <div id="portfolioMain">
+            <div id="portfolioDiv">
+                <img src="https://i.pinimg.com/736x/bb/6b/a3/bb6ba30f4d9c826463febcc6b6e32e0b.jpg"
+                    alt="Fashion Photography 1">
+            </div>
+            <div id="portfolioDiv">
+                <img src="https://i.pinimg.com/originals/11/2b/aa/112baaa2d06799486e47c8fc53950241.jpg"
+                    alt="Fashion Photography 2">
+            </div>
+            <div id="portfolioDiv">
+                <img src="https://wallpapercave.com/wp/wp5265654.jpg"
+                    alt="Fashion Photography 3">
+            </div>
+            <div id="portfolioDiv">
+                <img src="https://i.pinimg.com/originals/5d/79/45/5d79459cc69d6ea1a13f9619ffb9d5c0.jpg"
+                    alt="Fashion Photography 4">
+            </div>
+            <div id="portfolioDiv">
+                <img src="https://i.pinimg.com/originals/fc/95/6d/fc956df99178d82d511dfd4b2d12549c.jpg"
+                    alt="Fashion Photography 5">
+            </div>
+            <div id="portfolioDiv">
+                <img src="https://i.pinimg.com/originals/3c/82/cb/3c82cb531fcf4a634dfd3fc842d5de6c.jpg"
+                    alt="Fashion Photography 6">
+            </div>
+            <div id="loginPopup">
+                <div id="loginContent">
+                    <div id="closeMenu2" onclick="closeMenu2()">
+                        <i class="fa fa-times"></i>
+                    </div>
+                    <br>
+                    <iframe id="frame" src="login.html" style="width: 95%; height: 95%;" allowfullscreen=""
+                        frameborder="0"></iframe>
+                </div>
+            </div>
+    </section>
+    <script src="portfolio.js"></script>
+</body>
+
+</html>

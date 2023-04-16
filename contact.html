@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasterPiece | Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="header">
+        <div id="navBtn" onclick="displayMenu()">
+            <i class="fa fa-bars"></i>
+        </div>
+        <a href="index.html" id="homeBtn">
+            <i class="fa fa-home"></i>
+        </a>
+        <a href="index.html" id="logo">
+            <span>&#128248;</span><b>M<small>ASTER</small>P<small>IECE</small></b>
+        </a>
+        <a onclick="logIn(); return false;" id="loginBtn"><b>Login</b></button></a>
+    </div>
+    <section id="navBar">
+        <nav>
+            <br>
+            <div id="closeMenu1" onclick="closeMenu1()">
+                <i class="fa fa-times"></i>
+            </div>
+            <br><br><br><br><br>
+            <ul id="mainMenu">
+                <li><a href="gallery.html" id="galleryBtn">Gallery</a></li>
+                <li><a href="price.html" id="priceBtn">Price</a></li>
+                <li><a href="about.html" id="aboutBtn">About</a></li>
+                <li><a href="contact.html" id="contactBtn">Contact Us</a></li>
+            </ul>
+            <br><br><br><br><br>
+            <div id="staticLogo">
+                <span>&#128248;</span><b>M<small>ASTER</small>P<small>IECE</small></b>
+            </div>
+        </nav>
+    </section>
+    <section id="contact">
+        <div id="contactMain">
+            <div class="contactCol">
+                <div id="address">
+                    <h3>Let's get in touch!!!</h3>
+                    <h6>We're open for any suggestions or just to have a chat!</h6>
+                    <h5>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span><b>Address:</b></span>
+                        <p>198 West<br>21th Street,<br>Whitefield<br>Bengaluru<br>Karnataka<br>India - 765230</p>
+                    </h5>
+                    <br>
+                    <h5>
+                        <i class="fas fa-phone-alt"></i>
+                        <span><b>Phone:</b> +91-9876543210</span>
+                    </h5>
+                    <br>
+                    <h5>
+                        <i class="fas fa-paper-plane"></i>
+                        <span><b>Email:</b> info@masterpiece.com</span>
+                    </h5>
+                    <br>
+                    <h5>
+                        <i class="fas fa-globe"></i>
+                        <span><b>Website:</b> <a href="index.html">www.masterpiece.com</a></span>
+                    </h5>
+                </div>
+                <div id="contactForm">
+                    <h2>Get in Touch!!!</h2>
+                    <form action="#">
+                        <span>
+                            <p><b>Name</b></p>
+                            <input type="text" placeholder="Enter your Name">
+                        </span>
+                        <span>
+                            <p><b>Email ID</b></p>
+                            <input type="email" placeholder="Enter your Email ID">
+                        </span>
+                        <span>
+                            <p><b>Subject</b></p>
+                            <input type="text" placeholder="Enter the Subject">
+                        </span>
+                        <span>
+                            <p><b>Message</b></p>
+                            <textarea rows="3"></textarea>
+                        </span>
+                        <button type="submit"><b>Send Message</b></button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="loginPopup">
+            <div id="loginContent">
+                <div id="closeMenu2" onclick="closeMenu2()">
+                    <i class="fa fa-times"></i>
+                </div>
+                <br>
+                <iframe id="frame" src="login.html" style="width: 95%; height: 95%;" allowfullscreen=""
+                    frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+    <script src="contact.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Wedding Photography</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="header">
+        <div id="navBtn" onclick="displayMenu()">
+            <i class="fa fa-bars"></i>
+        </div>
+        <a href="index.html" id="homeBtn">
+            <i class="fa fa-home"></i>
+        </a>
+        <a href="index.html" id="logo">
+            <span>&#128248;</span><b>M<small>ASTER</small>P<small>IECE</small></b>
+        </a>
+        <a onclick="logIn(); return false;" id="loginBtn"><b>Login</b></button></a>
+    </div>
+    <section id="navBar">
+        <nav>
+            <br>
+            <div id="closeMenu1" onclick="closeMenu1()">
+                <i class="fa fa-times"></i>
+            </div>
+            <br><br><br><br><br>
+            <ul id="mainMenu">
+                <li><a href="gallery.html" id="galleryBtn">Gallery</a></li>
+                <li><a href="price.html" id="priceBtn">Price</a></li>
+                <li><a href="about.html" id="aboutBtn">About</a></li>
+                <li><a href="contact.html" id="contactBtn">Contact Us</a></li>
+            </ul>
+            <br><br><br><br><br>
+            <div id="staticLogo">
+                <span>&#128248;</span><b>M<small>ASTER</small>P<small>IECE</small></b>
+            </div>
+        </nav>
+    </section>
+    <section id="portfolio">
+        <div id="portfolioMain">
+            <div id="portfolioDiv">
+                <img src="https://images.squarespace-cdn.com/content/v1/5655fad1e4b0f0c1a007c952/1522519888098-WKNDTIVOUULO291S5W6H/Tacoma-Seattle-Wedding-Elopement-Alfred-Tang-photography-style-me-pretty-6.jpg"
+                    alt="Wedding Photography 1">
+            </div>
+            <div id="portfolioDiv">
+                <img src="https://assets.vogue.in/photos/5f3e60a418ed58cd147adc28/2:3/w_2560%2Cc_limit/Wedding%2520photography.jpg"
+                    alt="Wedding Photography 2">
+            </div>
+            <div id="portfolioDiv">
+                <img src="https://images.squarespace-cdn.com/content/v1/602280ed342edf719bd88d18/1657084097164-1I93UJE01FD5HB43DM2L/Jess_and_Riz-84.jpg"
+                    alt="Wedding Photography 3">
+            </div>
+            <div id="portfolioDiv">
+                <img src="https://image.wedmegood.com/resized/800X/uploads/member/942474/1579305612_837.jpg"
+                    alt="Wedding Photography 4">
+            </div>
+            <div id="portfolioDiv">
+                <img src="https://images.unsplash.com/flagged/photo-1552981941-424aac2b4311?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2VkZGluZyUyMHBob3RvZ3JhcGh5fGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+                    alt="Wedding Photography 5">
+            </div>
+            <div id="portfolioDiv">
+                <img src="https://crystallinestudio.com/image_gallery/thumbs/Crystalline-photography-3503.jpg"
+                    alt="Wedding Photography 6">
+            </div>
+            <div id="loginPopup">
+                <div id="loginContent">
+                    <div id="closeMenu2" onclick="closeMenu2()">
+                        <i class="fa fa-times"></i>
+                    </div>
+                    <br>
+                    <iframe id="frame" src="login.html" style="width: 95%; height: 95%;" allowfullscreen=""
+                        frameborder="0"></iframe>
+                </div>
+            </div>
+    </section>
+    <script src="portfolio.js"></script>
+</body>
+
+</html>

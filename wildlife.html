@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Wildlife Photography</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="header">
+        <div id="navBtn" onclick="displayMenu()">
+            <i class="fa fa-bars"></i>
+        </div>
+        <a href="index.html" id="homeBtn">
+            <i class="fa fa-home"></i>
+        </a>
+        <a href="index.html" id="logo">
+            <span>&#128248;</span><b>M<small>ASTER</small>P<small>IECE</small></b>
+        </a>
+        <a onclick="logIn(); return false;" id="loginBtn"><b>Login</b></button></a>
+    </div>
+    <section id="navBar">
+        <nav>
+            <br>
+            <div id="closeMenu1" onclick="closeMenu1()">
+                <i class="fa fa-times"></i>
+            </div>
+            <br><br><br><br><br>
+            <ul id="mainMenu">
+                <li><a href="gallery.html" id="galleryBtn">Gallery</a></li>
+                <li><a href="price.html" id="priceBtn">Price</a></li>
+                <li><a href="about.html" id="aboutBtn">About</a></li>
+                <li><a href="contact.html" id="contactBtn">Contact Us</a></li>
+            </ul>
+            <br><br><br><br><br>
+            <div id="staticLogo">
+                <span>&#128248;</span><b>M<small>ASTER</small>P<small>IECE</small></b>
+            </div>
+        </nav>
+    </section>
+    <section id="portfolio">
+        <div id="portfolioMain">
+            <div id="portfolioDiv">
+                <img src="https://walkthewilderness.net/wp-content/uploads/2018/12/African-Lion-in-Masai-Mara-2.jpg"
+                    alt="Wildlife Photography 1">
+            </div>
+            <div id="portfolioDiv">
+                <img src="https://i.pinimg.com/originals/b2/0c/bd/b20cbdebd53e3629459285f367773ebb.jpg"
+                    alt="Wildlife Photography 2">
+            </div>
+            <div id="portfolioDiv">
+                <img src="https://images.unsplash.com/photo-1605092676920-8ac5ae40c7c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dGlnZXIlMjBwb3J0cmFpdHxlbnwwfHwwfHw%3D&w=1000&q=80"
+                    alt="Wildlife Photography 3">
+            </div>
+            <div id="portfolioDiv">
+                <img src="https://i.pinimg.com/736x/3b/63/98/3b639868647b8c53e9bc50f541974da2.jpg"
+                    alt="Wildlife Photography 4">
+            </div>
+            <div id="portfolioDiv">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/TheCheethcat.jpg/800px-TheCheethcat.jpg"
+                    alt="Wildlife Photography 5">
+            </div>
+            <div id="portfolioDiv">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/626ea239-c87b-4e79-85d2-cf87605de7fc/ddmak0n-26d42aa2-5482-4b9e-9c30-6924b2a56880.jpg/v1/fill/w_734,h_1089,q_70,strp/red_deer_portrait_by_wildlifeaddict_ddmak0n-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTU2OCIsInBhdGgiOiJcL2ZcLzYyNmVhMjM5LWM4N2ItNGU3OS04NWQyLWNmODc2MDVkZTdmY1wvZGRtYWswbi0yNmQ0MmFhMi01NDgyLTRiOWUtOWMzMC02OTI0YjJhNTY4ODAuanBnIiwid2lkdGgiOiI8PTM3NTYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.mENXpu0MO7bIz6fNHl_DgoZhDWVvK8xPtaecxrrpmnA"
+                    alt="Wildlife Photography 6">
+            </div>
+            <div id="loginPopup">
+                <div id="loginContent">
+                    <div id="closeMenu2" onclick="closeMenu2()">
+                        <i class="fa fa-times"></i>
+                    </div>
+                    <br>
+                    <iframe id="frame" src="login.html" style="width: 95%; height: 95%;" allowfullscreen=""
+                        frameborder="0"></iframe>
+                </div>
+            </div>
+    </section>
+    <script src="portfolio.js"></script>
+</body>
+
+</html>

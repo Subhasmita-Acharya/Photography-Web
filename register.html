@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page&nbsp;📄</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body onload="document.registration.userid.focus();">
+    <form class="modal-content animate" action="/action_page.php" method="post" name="registration"
+        onSubmit="return formValidation();" class="regForm">
+        <div class="form" id="x">
+            <h1 class="heading">Register</h1>
+            <br><br>
+            <div id="input">
+                <label for="username"><b>Name:</b></label>
+                <input type="text" name="username" id="uname" required />
+            </div>
+            <br>
+            <div id="input">
+                <label for="email"><b>Email ID:</b></label>
+                <input type="text" name="email" id="email" required />
+            </div>
+            <br>
+            <div id="input">
+                <label for="phone"><b>Mobile Number:</b></label>
+                <input type="tel" name="phone" id="phone" maxlength="10" required />
+            </div>
+            <br>
+            <div id="input">
+                <label for="userid"><b>User ID:</b></label>
+                <input type="text" name="userid" id="userid" required />
+            </div>
+            <br>
+            <div id="input">
+                <label for="passid"><b>Password:</b></label>
+                <input type="password" name="passid" id="passid" minlength="8" required />
+            </div>
+            <br>
+            <span>By creating an account you agree to our
+                <a href="terms_conds.html" id="terms">Terms & Privacy</a>
+            </span>
+            <br><br>
+            <button type="submit" class="registerBtn">Register</button>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div>
+            <span id="log">Already have an account?
+                <a href="login.html" id="link">
+                    <b>Sign In</b>
+                </a>
+            </span>
+        </div>
+        <br>
+        <div id="popup">
+            <div id="content">
+                <iframe id="frame" src="login.html" style="width: 95%; height: 95%;" allowfullscreen=""
+                    frameborder="0"></iframe>
+            </div>
+        </div>
+    </form>
+    <script src="register.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasterPiece | Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="header">
+        <div id="navBtn" onclick="displayMenu()">
+            <i class="fa fa-bars"></i>
+        </div>
+        <a href="index.html" id="homeBtn">
+            <i class="fa fa-home"></i>
+        </a>
+        <a href="index.html" id="logo">
+            <span>&#128248;</span><b>M<small>ASTER</small>P<small>IECE</small></b>
+        </a>
+        <a onclick="logIn(); return false;" id="loginBtn"><b>Login</b></button></a>
+    </div>
+    <section id="navBar">
+        <nav>
+            <br>
+            <div id="closeMenu1" onclick="closeMenu1()">
+                <i class="fa fa-times"></i>
+            </div>
+            <br><br><br><br><br>
+            <ul id="mainMenu">
+                <li><a href="gallery.html" id="galleryBtn">Gallery</a></li>
+                <li><a href="price.html" id="priceBtn">Price</a></li>
+                <li><a href="about.html" id="aboutBtn">About</a></li>
+                <li><a href="contact.html" id="contactBtn">Contact Us</a></li>
+            </ul>
+            <br><br><br><br><br>
+            <div id="staticLogo">
+                <span>&#128248;</span><b>M<small>ASTER</small>P<small>IECE</small></b>
+            </div>
+        </nav>
+    </section>
+    <section id="gallery">
+        <div id="galleryMain">
+            <div id="div1">
+                <img src="https://www.re-thinkingthefuture.com/wp-content/uploads/2021/04/A3933-Architectural-Photography-The-art-of-capturing-structures-IMAGE-6.jpg"
+                    alt="Architectural Photography">
+                <div id="imgInfo">
+                    <h5>PORTRAIT / LANDSCAPE</h5>
+                    <br>
+                    <h3>Architectural Photography</h3>
+                    <br><br>
+                    <a href="architecture.html" class="galleryPortfolioBtn">View Portfolio</a>
+                </div>
+            </div>
+            <div id="div1">
+                <img src="https://i.pinimg.com/originals/a7/75/d5/a775d576320e4d06a498718a105bc269.jpg"
+                    alt="Fashion Photography">
+                <div id="imgInfo">
+                    <h5>PORTRAIT</h5>
+                    <br>
+                    <h3>Fashion Photography</h3>
+                    <br><br>
+                    <a href="fashion.html" class="galleryPortfolioBtn">View Portfolio</a>
+                </div>
+            </div>
+            <div id="div1">
+                <img src="https://i.pinimg.com/originals/f8/29/d9/f829d9a23a65d3bd633d3739003a2566.jpg"
+                    alt="Food Photography">
+                <div id="imgInfo">
+                    <h5>PORTRAIT / LANDSCAPE</h5>
+                    <br>
+                    <h3>Food Photography</h3>
+                    <br><br>
+                    <a href="food.html" class="galleryPortfolioBtn">View Portfolio</a>
+                </div>
+            </div>
+            <div id="div1">
+                <img src="https://i.pinimg.com/originals/2a/ac/f1/2aacf11d89213a4e9a7fb57b202bfa73.jpg"
+                    alt="Landscape Photography">
+                <div id="imgInfo">
+                    <h5>PORTRAIT / LANDSCAPE</h5>
+                    <br>
+                    <h3>Landscape Photography</h3>
+                    <br><br>
+                    <a href="landscape.html" class="galleryPortfolioBtn">View Portfolio</a>
+                </div>
+            </div>
+            <div id="div1">
+                <img src="https://storytellerphotography.org/wp-content/uploads/2022/02/2.jpg"
+                    alt="Wedding Photography">
+                <div id="imgInfo">
+                    <h5>PORTRAIT / LANDSCAPE</h5>
+                    <br>
+                    <h3>Wedding Photography</h3>
+                    <br><br>
+                    <a href="wedding.html" class="galleryPortfolioBtn">View Portfolio</a>
+                </div>
+            </div>
+            <div id="div1">
+                <img src="https://i.guim.co.uk/img/media/1117566bbe6b29dbffe749bf7b1496341b706739/0_0_2422_3641/master/2422.jpg?width=700&quality=85&auto=format&fit=max&s=c9a270d551d4277554f02a9448616c8b"
+                    alt="Wildlife Photography">
+                <div id="imgInfo">
+                    <h5>PORTRAIT / LANDSCAPE</h5>
+                    <br>
+                    <h3>Wildlife Photography</h3>
+                    <br><br>
+                    <a href="wildlife.html" class="galleryPortfolioBtn">View Portfolio</a>
+                </div>
+            </div>
+        </div>
+        <div id="loginPopup">
+            <div id="loginContent">
+                <div id="closeMenu2" onclick="closeMenu2()">
+                    <i class="fa fa-times"></i>
+                </div>
+                <br>
+                <iframe id="frame" src="login.html" style="width: 95%; height: 95%;" allowfullscreen=""
+                    frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+    <script src="gallery.js"></script>
+</body>
+
+</html>
